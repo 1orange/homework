@@ -1,0 +1,18 @@
+# Build artifacts
+target/
+*.class
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Claude Code
+.claude/
+.remember/
+
+# OS
+.DS_Store
