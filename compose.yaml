@@ -1,0 +1,81 @@
+name: patch-harness
+
+x-inventory-build: &inventory-build
+  context: ./services/inventory-api
+  dockerfile: Dockerfile
+
+x-report-build: &report-build
+  context: ./services/report-worker
+  dockerfile: Dockerfile
+
+x-harness-build: &harness-build
+  context: .
+  dockerfile: services/agent-harness/Dockerfile
+
+services:
+  # Long-running developer service.
+  inventory-api:
+    image: patch-harness/inventory-api:dev
+    build:
+      <<: *inventory-build
+      target: runtime
+    ports:
+      - "8080:8080"
+
+  # One-shot Maven task; this image has the Maven toolchain and never needs a
+  # Maven installation on the host.
+  inventory-api-test:
+    image: patch-harness/inventory-api:test
+    build:
+      <<: *inventory-build
+      target: test
+    command: ["mvn", "-B", "-ntp", "test"]
+
+  report-worker-test:
+    image: patch-harness/report-worker:dev
+    build:
+      <<: *report-build
+    command: ["pytest", "-q"]
+
+  report-worker-smoke:
+    image: patch-harness/report-worker:dev
+    build:
+      <<: *report-build
+    command:
+      - python
+      - -c
+      - >-
+        from report_worker import render;
+        output = render.render('compose-smoke', [{'sku': 'SKU-1001', 'quantity': 42}]);
+        assert 'compose-smoke' in output and 'SKU-1001: 42' in output;
+        print(output, end='')
+
+  # The harness is deliberately a leaf process.  It cannot reach or control
+  # sibling services and receives neither a Docker socket nor host credentials.
+  harness-test:
+    image: patch-harness/agent-harness:dev
+    build:
+      <<: *harness-build
+    network_mode: none
+    command: ["pytest", "-q"]
+
+  harness-evaluate:
+    image: patch-harness/agent-harness:dev
+    build:
+      <<: *harness-build
+    network_mode: none
+    command:
+      - /bin/sh
+      - -c
+      - >-
+        exec python -m agent_harness
+        --findings /app/findings/findings.json
+        --output-dir "/evidence/$${HOSTNAME}"
+    volumes:
+      - type: volume
+        source: harness-artifacts
+        target: /evidence
+
+volumes:
+  harness-artifacts:
+    name: patch-harness-evidence
