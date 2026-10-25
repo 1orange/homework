@@ -1,0 +1,176 @@
+{
+  "example_label": "SIMULATED_HARNESS_EVIDENCE_ONLY",
+  "simulation_notice": "SIMULATED FIXTURE ONLY: this demonstrates harness behavior; it is not evidence about this checkout and is not a production attestation.",
+  "finding_id": "F-40219",
+  "package": "PyYAML",
+  "cve": "CVE-2020-14343",
+  "observed_at": "2026-01-01T00:00:00Z",
+  "fixed_commit": "fixture-pyyaml-fixed-commit",
+  "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "lifecycle_state": "verified_remediated",
+  "lifecycle_path": [
+    "proposed",
+    "authorized",
+    "merged",
+    "built",
+    "deployed",
+    "verified_remediated"
+  ],
+  "authorized_gates": [
+    {
+      "id": "build",
+      "status": "passed",
+      "authorized": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tests",
+      "status": "passed",
+      "authorized": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "security-probe",
+      "status": "passed",
+      "authorized": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "dependency-rescan",
+      "status": "passed",
+      "authorized": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "sbom": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "vulnerable_artifact": "PyYAML==5.3.1",
+    "vulnerable_artifact_present": false,
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "deployment": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "deployment_id": "fixture-pyyaml-deployment",
+    "status": "completed",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "expected_replica_ids": [
+    "report-worker-a",
+    "report-worker-b"
+  ],
+  "runtime_replicas": [
+    {
+      "finding_id": "F-40219",
+      "package": "PyYAML",
+      "cve": "CVE-2020-14343",
+      "replica_id": "report-worker-a",
+      "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "healthy": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "finding_id": "F-40219",
+      "package": "PyYAML",
+      "cve": "CVE-2020-14343",
+      "replica_id": "report-worker-b",
+      "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "healthy": true,
+      "observed_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "post_deployment_scan": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "scan_id": "fixture-pyyaml-post-deploy-scan",
+    "status": "clean",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "vulnerable_rollback": false,
+  "vulnerable_digests": [],
+  "hashes": {
+    "verification_evidence": "1604a1199b6f19f94a06807c1cc9682b28d83f2b030ac02369a054ca177bcf9a",
+    "event_chain_head": "8b30bb8d800aa6ebfd25e4585b66f52fbbfd54b2d9542be378545a9edc0c41e6"
+  },
+  "events": [
+    {
+      "sequence": 0,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": null,
+      "to_state": "proposed",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": null,
+      "reason": "finding proposed",
+      "previous_hash": null,
+      "event_hash": "fc20590fc3fd5eb945169c302b91aaa17659d58c334e41d4a609de55dd093371"
+    },
+    {
+      "sequence": 1,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": "proposed",
+      "to_state": "authorized",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": "6da37d11e14b70ef05efed80cc82b6608d337ed692bec930eec834bf99294d62",
+      "reason": null,
+      "previous_hash": "fc20590fc3fd5eb945169c302b91aaa17659d58c334e41d4a609de55dd093371",
+      "event_hash": "bb4fe8fb96d65807e867aa4977f6ba138488e9429d9025eb3acc569ed12b6bb3"
+    },
+    {
+      "sequence": 2,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": "authorized",
+      "to_state": "merged",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": null,
+      "reason": null,
+      "previous_hash": "bb4fe8fb96d65807e867aa4977f6ba138488e9429d9025eb3acc569ed12b6bb3",
+      "event_hash": "9c002666e5a9607f098b76528623f2a04ebb6a6eecdc850bd8c44476dbda69bf"
+    },
+    {
+      "sequence": 3,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": "merged",
+      "to_state": "built",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": "fb723b72de52785437993eb90e9d6043ff7215d9922c65dbdde846463f1ccd43",
+      "reason": null,
+      "previous_hash": "9c002666e5a9607f098b76528623f2a04ebb6a6eecdc850bd8c44476dbda69bf",
+      "event_hash": "a96edc9e72491473b293684682011ebd967d67b40de247fea2e94868661e1067"
+    },
+    {
+      "sequence": 4,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": "built",
+      "to_state": "deployed",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": "2c67a7d845cebf7bceb2c1efd4a22df100c054aae4c9c40aff75d8e9125aadd4",
+      "reason": null,
+      "previous_hash": "a96edc9e72491473b293684682011ebd967d67b40de247fea2e94868661e1067",
+      "event_hash": "d4b4ad793252ac389740ac980907292568a39491ac6df09d5fb678942baf5ad0"
+    },
+    {
+      "sequence": 5,
+      "finding_id": "F-40219",
+      "event_type": "lifecycle_transition",
+      "from_state": "deployed",
+      "to_state": "verified_remediated",
+      "timestamp": "2026-01-01T00:00:00Z",
+      "evidence_hash": "1604a1199b6f19f94a06807c1cc9682b28d83f2b030ac02369a054ca177bcf9a",
+      "reason": null,
+      "previous_hash": "d4b4ad793252ac389740ac980907292568a39491ac6df09d5fb678942baf5ad0",
+      "event_hash": "8b30bb8d800aa6ebfd25e4585b66f52fbbfd54b2d9542be378545a9edc0c41e6"
+    }
+  ]
+}

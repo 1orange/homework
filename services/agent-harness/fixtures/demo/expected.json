@@ -1,0 +1,5 @@
+[
+  {"finding_id":"F-40218","run_status":"completed","decision":"review","primary_reason":"TRANSITIVE_OVERRIDE","lifecycle_state":"proposed","category":"major_upgrade_review","rule_order":["exact_identity","advisory_consistency","trusted_unaffected_target","allowed_transformation","bounded_dependency_diff","verification_gates"]},
+  {"finding_id":"F-40219","run_status":"completed","decision":"accept","primary_reason":"ELIGIBLE_FOR_AUTOMATED_PULL_REQUEST","lifecycle_state":"proposed","category":"safe_direct_update","rule_order":["exact_identity","advisory_consistency","trusted_unaffected_target","allowed_transformation","bounded_dependency_diff","verification_gates"]},
+  {"finding_id":"F-40220","run_status":"completed","decision":"review","primary_reason":"ADVISORY_CONFLICT","lifecycle_state":"proposed","category":"advisory_conflict_review","rule_order":["exact_identity","advisory_consistency","trusted_unaffected_target","allowed_transformation","bounded_dependency_diff","verification_gates"]}
+]

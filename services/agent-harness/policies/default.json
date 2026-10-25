@@ -1,0 +1,27 @@
+{
+  "bounded_source_paths": [
+    {
+      "paths": [
+        "services/inventory-api/src/main/java/com/example/inventory/ConfigLoader.java"
+      ],
+      "transformation_id": "safe-yaml-source-transform"
+    }
+  ],
+  "registered_transformations": [
+    "python-direct-dependency-update",
+    "maven-direct-dependency-update",
+    "maven-transitive-override",
+    "safe-yaml-source-transform"
+  ],
+  "required_verification_gates": [
+    "tests",
+    "security-probe",
+    "dependency-rescan",
+    "build"
+  ],
+  "review_only_transformations": [
+    "source-migration",
+    "unapproved-source-migration",
+    "maven-source-migration"
+  ]
+}

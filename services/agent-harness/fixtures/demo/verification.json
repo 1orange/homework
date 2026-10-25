@@ -1,0 +1,5 @@
+[
+  {"finding_id":"F-40218","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40219","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40220","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]}
+]

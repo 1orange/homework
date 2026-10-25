@@ -1,0 +1,16 @@
+[
+  {"finding_id":"F-40207","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40208","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40209","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40210","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40211","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40212","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40213","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40214","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40215","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40216","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40217","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40218","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40219","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]},
+  {"finding_id":"F-40220","gates":[{"id":"build","status":"passed"},{"id":"tests","status":"passed"},{"id":"security-probe","status":"passed"},{"id":"dependency-rescan","status":"passed"}]}
+]

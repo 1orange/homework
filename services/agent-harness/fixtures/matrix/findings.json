@@ -1,0 +1,20 @@
+{
+  "generated": "2026-01-01T00:00:00Z",
+  "scanner": "fixture-composition-scan",
+  "findings": [
+    {"id":"F-40207","cve":"CVE-FIXTURE-INVALID-PROVENANCE","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":1,"notes":"Invalid provenance boundary."},
+    {"id":"F-40208","cve":"CVE-FIXTURE-MISSING-ADVISORY","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":2,"notes":"Missing advisory enrichment."},
+    {"id":"F-40209","cve":"CVE-FIXTURE-PROTECTED-PATH","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":3,"notes":"Protected CI path observed."},
+    {"id":"F-40210","cve":"CVE-FIXTURE-UNDECLARED-DIFF","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":4,"notes":"Independent observer found an undeclared file."},
+    {"id":"F-40211","cve":"CVE-FIXTURE-TEST-WEAKENING","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":5,"notes":"A verification control was weakened."},
+    {"id":"F-40212","cve":"CVE-FIXTURE-AFFECTED-TARGET","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":6,"notes":"Proposed target remains affected."},
+    {"id":"F-40213","cve":"CVE-FIXTURE-TARGET-MISMATCH","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":7,"notes":"Proposal identity mismatch."},
+    {"id":"F-40214","cve":"CVE-FIXTURE-SOURCE-MIGRATION","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":8,"notes":"Unapproved source migration."},
+    {"id":"F-40215","cve":"CVE-FIXTURE-TRANSITIVE","severity":"high","service":"inventory-api","package":"org.yaml:snakeyaml","ecosystem":"maven","installed_version":"1.30","path":"transitive via org.springframework.boot:spring-boot-starter","fixed_version":"2.0","sla_days_remaining":9,"notes":"Transitive override requires compatibility review."},
+    {"id":"F-40216","cve":"CVE-FIXTURE-DOWNGRADE","severity":"medium","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.4","path":"direct","fixed_version":"5.3.0","sla_days_remaining":10,"notes":"Downgrade is intentionally routed to review."},
+    {"id":"F-40217","cve":"CVE-2022-1471","severity":"critical","service":"inventory-api","package":"org.yaml:snakeyaml","ecosystem":"maven","installed_version":"1.30","path":"transitive","fixed_version":"2.0","sla_days_remaining":1,"notes":"Approved bounded deterministic source transformation."},
+    {"id":"F-40218","cve":"CVE-2022-1471","severity":"critical","service":"inventory-api","package":"org.yaml:snakeyaml","ecosystem":"maven","installed_version":"1.30","path":"transitive via org.springframework.boot:spring-boot-starter","fixed_version":"2.0","sla_days_remaining":2,"notes":"Supplied SnakeYAML compatibility-sensitive finding."},
+    {"id":"F-40219","cve":"CVE-2020-14343","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":11,"notes":"Supplied safe direct PyYAML fixture."},
+    {"id":"F-40220","cve":"CVE-2015-6420","severity":"high","service":"inventory-api","package":"commons-collections:commons-collections","ecosystem":"maven","installed_version":"3.2.1","path":"direct","fixed_version":null,"sla_days_remaining":12,"notes":"Supplied scanner/advisory conflict fixture."}
+  ]
+}

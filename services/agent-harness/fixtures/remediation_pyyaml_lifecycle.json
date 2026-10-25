@@ -1,0 +1,48 @@
+{
+  "fixture_label": "SIMULATED_HARNESS_EVIDENCE_ONLY",
+  "finding_id": "F-40219",
+  "package": "PyYAML",
+  "fixed_commit": "fixture-pyyaml-fixed-commit",
+  "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "cve": "CVE-2020-14343",
+  "authorized_gates": [
+    {"id": "build", "status": "passed", "authorized": true, "observed_at": "2026-01-01T00:00:00Z"},
+    {"id": "tests", "status": "passed", "authorized": true, "observed_at": "2026-01-01T00:00:00Z"},
+    {"id": "security-probe", "status": "passed", "authorized": true, "observed_at": "2026-01-01T00:00:00Z"},
+    {"id": "dependency-rescan", "status": "passed", "authorized": true, "observed_at": "2026-01-01T00:00:00Z"}
+  ],
+  "sbom": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "vulnerable_artifact": "PyYAML==5.3.1",
+    "vulnerable_artifact_present": false,
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "deployment": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "deployment_id": "fixture-pyyaml-deployment",
+    "status": "completed",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "runtime_replicas": [
+    {"finding_id": "F-40219", "package": "PyYAML", "cve": "CVE-2020-14343", "replica_id": "report-worker-a", "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "observed_at": "2026-01-01T00:00:00Z"},
+    {"finding_id": "F-40219", "package": "PyYAML", "cve": "CVE-2020-14343", "replica_id": "report-worker-b", "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "observed_at": "2026-01-01T00:00:00Z"}
+  ],
+  "expected_replica_ids": ["report-worker-a", "report-worker-b"],
+  "post_deployment_scan": {
+    "finding_id": "F-40219",
+    "package": "PyYAML",
+    "cve": "CVE-2020-14343",
+    "scan_id": "fixture-pyyaml-post-deploy-scan",
+    "status": "clean",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "observed_at": "2026-01-01T00:00:00Z"
+  },
+  "vulnerable_rollback": false,
+  "fixture_disclaimer": "Demonstrates harness behavior only; does not attest to this checkout or a real environment."
+}

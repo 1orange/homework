@@ -1,0 +1,5 @@
+[
+  {"finding_id":"F-40218","files":["services/inventory-api/pom.xml"],"content_hashes":{"services/inventory-api/pom.xml":"14e8693ce34e51f5688fd77b9b96c775341a387681688be1825272ef3c3f38f0"},"dependency_only":true},
+  {"finding_id":"F-40219","files":["services/report-worker/requirements.lock"],"content_hashes":{"services/report-worker/requirements.lock":"7f0bb5a99355b1fa571f836017a58fa69f549999a4bd554e341931983bc8408f"},"dependency_only":true},
+  {"finding_id":"F-40220","files":["services/inventory-api/pom.xml"],"content_hashes":{"services/inventory-api/pom.xml":"5fd12dbb76ca1b2b4098fc0e4da8c0d523b2473e3b8964eb6433d4dd1cb26297"},"dependency_only":true}
+]

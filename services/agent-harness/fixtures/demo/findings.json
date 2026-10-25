@@ -1,0 +1,9 @@
+{
+  "generated": "2026-08-03T02:14:07Z",
+  "scanner": "fixture-composition-scan",
+  "findings": [
+    {"id":"F-40218","cve":"CVE-2022-1471","severity":"critical","service":"inventory-api","package":"org.yaml:snakeyaml","ecosystem":"maven","installed_version":"1.30","path":"transitive via org.springframework.boot:spring-boot-starter","fixed_version":"2.0","sla_days_remaining":4,"notes":"Supplied SnakeYAML compatibility-sensitive finding."},
+    {"id":"F-40219","cve":"CVE-2020-14343","severity":"high","service":"report-worker","package":"PyYAML","ecosystem":"pypi","installed_version":"5.3.1","path":"direct","fixed_version":"5.4","sla_days_remaining":11,"notes":"Supplied safe direct PyYAML fixture."},
+    {"id":"F-40220","cve":"CVE-2015-6420","severity":"high","service":"inventory-api","package":"commons-collections:commons-collections","ecosystem":"maven","installed_version":"3.2.1","path":"direct","fixed_version":null,"sla_days_remaining":-63,"notes":"Supplied scanner/advisory conflict fixture."}
+  ]
+}

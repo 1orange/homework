@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-agent-harness"
+version = "0.1.0"
+description = "Deterministic, policy-authorized dependency remediation harness"
+requires-python = ">=3.11"
+dependencies = [
+  "packaging>=24,<27",
+  "pydantic>=2.10,<3",
+  # FunctionModel is an execution boundary, so keep its API and transitive
+  # runtime dependencies reproducible rather than allowing a provider-facing
+  # minor release to change underneath the harness.
+  "pydantic-ai-slim==1.107.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<9"]
+
+[project.scripts]
+agent-harness = "agent_harness.cli:main"
+
+[tool.poetry]
+packages = [{ include = "agent_harness" }]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
